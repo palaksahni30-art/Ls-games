@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LS Games</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+
+<body>
+
+    <h1>LS Games</h1>
+
+    <div class="hr"></div>
+
+    <div class="game" onclick="openFullscreen('scratchGame1')">
+        <a href="https://scratch.mit.edu/projects/1261033434" target="_blank">
+        ▶ Play Game 1 on Scratch
+    </a>
+    <iframe
+        id="scratchGame1"
+        src="https://scratch.mit.edu/projects/1261033434/embed"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<div class="hr"></div>
+
+
+<div class="game" onclick="openFullscreen('scratchGame2')">
+    <a href="https://scratch.mit.edu/projects/1261083006" target="_blank">
+        ▶ Play Game 2 on Scratch
+    </a>
+    <iframe
+        id="scratchGame2"
+        src="https://scratch.mit.edu/projects/1261083006/embed"
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+<script>
+function openFullscreen(gameId) {
+    const iframe = document.getElementById(gameId);
+
+    if (!iframe) return;
+
+    if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+    } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+    }
+}
+</script>
+
+
+</body>
+</html>

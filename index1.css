@@ -1,0 +1,61 @@
+/* Page background */
+body {
+    background-image: url("games2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* Heading */
+h1 {
+    font-size: 100px;
+    color: rgb(246, 206, 5);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Description text */
+.description {
+    text-align: left;
+    font-size: 24px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+/* Divider */
+.hr {
+    background-color: black;
+    height: 2px;
+    margin: 20px;
+}
+.game {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Normal view size */
+iframe {
+    width: 800px;
+    height: 500px;
+    border: none;
+}
+
+/* FULLSCREEN FIX */
+iframe:fullscreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe:-webkit-full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe:-ms-fullscreen {
+    width: 100vw;
+    height: 100vh;
+}
